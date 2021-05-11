@@ -29,7 +29,7 @@ export default function Template_Configuracoes({ nomeConfiguracao, descricaoConf
                             value={estaConfiguradoEm} 
                             onValueChange={mudarConfiguracao} />
                 </View>
-
+                
                 <Text style={styleConfig.contentSection_MainText}>
                     {nomeConfiguracao}
                 </Text>

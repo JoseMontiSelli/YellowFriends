@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, Image, SafeAreaView, } from 'react-native';
+import { StyleSheet, Text, View, FlatList, SafeAreaView, } from 'react-native';
 import { CardUsuario } from '../components/CardUsuario'
 import DADOS_CardUsuario from '../Data/DATA_Conversas'
   
