@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, SectionList } from 'react-native';
+import { registerRootComponent } from 'expo'
 
 // Dados das configurações
 import DADOS_Configuracoes from './src/Data/DATA_Configuracoes'
@@ -8,7 +9,7 @@ import DADOS_Configuracoes from './src/Data/DATA_Configuracoes'
 import CardConfiguracao from './src/components/CardConfiguracoes';
 import SectionConfuracao from './src/components/SectionConfiguracao';
 
-export default function App() {
+function App() {
   return (
     <SafeAreaView style={info.main}>
       <SectionList style={info.list}
@@ -31,6 +32,7 @@ export default function App() {
   )
 };
 
+
 const info = StyleSheet.create({
   main: {
     width: '100%',
@@ -45,3 +47,6 @@ const info = StyleSheet.create({
     marginTop: 10
   }
 });
+
+
+export default registerRootComponent(App);
