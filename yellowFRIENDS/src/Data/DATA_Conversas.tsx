@@ -1,7 +1,7 @@
 const DADOS_CardUsuario = [
     {
         id: '4',
-        avatar: require('../images/Bea.pngw'),
+        avatar: require('../images/Bea.png'),
         nome: 'Bea Tricoli',
         hora: '01:00',
         mensagem: 'miau miau miau miau miau miau me atende !!!!',
