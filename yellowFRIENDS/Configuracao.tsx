@@ -27,7 +27,7 @@ function App() {
                                       statusConfiguracao={item.status} />}
       />
     </SafeAreaView>
-    // teste master
+    // teste de conflito, essa é a branch master
   )
 };
 
