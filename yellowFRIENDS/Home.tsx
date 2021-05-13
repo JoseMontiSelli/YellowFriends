@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, FlatList, SafeAreaView, } from 'react-native';
 import { CardUsuario } from './src/components/CardUsuario'
 import { registerRootComponent } from 'expo'
 import DADOS_CardUsuario from './src/Data/DATA_Conversas'
-  
+// Teste teste_rotas
 function Home() {
   return (
     <SafeAreaView style={home.main}>
