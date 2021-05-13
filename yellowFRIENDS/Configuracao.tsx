@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, SectionList } from 'react-native';
-import { registerRootComponent } from 'expo'
 
 // Dados das configurações
 import DADOS_Configuracoes from './src/Data/DATA_Configuracoes'
@@ -27,7 +26,6 @@ function App() {
                                       iconeConfiguracao={item.icone}
                                       statusConfiguracao={item.status} />}
       />
-
     </SafeAreaView>
   )
 };
@@ -49,4 +47,3 @@ const info = StyleSheet.create({
 });
 
 
-export default registerRootComponent(App);

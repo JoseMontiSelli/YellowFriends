@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, SafeAreaView, } from 'react-native';
-import { CardUsuario } from '../components/CardUsuario'
-import DADOS_CardUsuario from '../Data/DATA_Conversas'
+import { CardUsuario } from './src/components/CardUsuario'
+import { registerRootComponent } from 'expo'
+import DADOS_CardUsuario from './src/Data/DATA_Conversas'
   
-export default function App() {
+function Home() {
   return (
     <SafeAreaView style={home.main}>
       <StatusBar backgroundColor="#FFD600" />
@@ -66,3 +67,5 @@ const home = StyleSheet.create({
   },
 
 });
+
+export default registerRootComponent(Home);
