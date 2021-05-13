@@ -27,6 +27,7 @@ function App() {
                                       statusConfiguracao={item.status} />}
       />
     </SafeAreaView>
+    // teste
   )
 };
 
