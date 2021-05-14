@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, SafeAreaView, } from 'react-native';
-import { CardUsuario } from './src/components/CardUsuario'
+import { CardUsuario } from './Components/CardUsuario'
 import { registerRootComponent } from 'expo'
-import DADOS_CardUsuario from './src/Data/DATA_Conversas'
-// Teste teste_rotas
+
+import DADOS_CardUsuario from '../../Data/DATA_Conversas'
 function Home() {
   return (
     <SafeAreaView style={home.main}>
