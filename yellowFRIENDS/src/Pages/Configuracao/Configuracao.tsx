@@ -3,10 +3,10 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, SectionList } from 'react-native';
 
 // Dados das configurações
-import DADOS_Configuracoes from './src/Data/DATA_Configuracoes'
+import DADOS_Configuracoes from '../../Data/DATA_Configuracoes'
 // Templates
-import CardConfiguracao from './src/components/CardConfiguracoes';
-import SectionConfuracao from './src/components/SectionConfiguracao';
+import CardConfiguracao from './Components/Template_CardConfiguracoes';
+import SectionConfuracao from '../../Components/SectionConfiguracao';
 
 function App() {
   return (
@@ -27,7 +27,6 @@ function App() {
                                       statusConfiguracao={item.status} />}
       />
     </SafeAreaView>
-    // teste  de conflito 1
   )
 };
 
