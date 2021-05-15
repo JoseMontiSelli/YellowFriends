@@ -1,11 +1,14 @@
 import React from 'react';
-import {View} from 'react-native';
 import { registerRootComponent } from 'expo'
+import {NavigationContainer} from '@react-navigation/native'
+import {RotasNavBar} from './src/Pages/routes';
 
 
 function Index (){
  return (
-     
+     <NavigationContainer>
+         <RotasNavBar/>
+     </NavigationContainer>
  );
 }
 

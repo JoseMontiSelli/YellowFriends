@@ -1,7 +1,7 @@
 const DADOS_CardUsuario = [
     {
         id: '4',
-        avatar: require('../images/Bea.png'),
+        avatar: require('../images/Usuarios/Bea.png'),
         nome: 'Bea Tricoli',
         hora: '01:00',
         mensagem: 'miau miau miau miau miau miau me atende !!!!',
@@ -9,7 +9,7 @@ const DADOS_CardUsuario = [
     },
     {
         id: '1',
-        avatar: require('../images/Daniele.jpg'),
+        avatar: require('../images/Usuarios/Daniele.jpg'),
         nome: 'Daniele Pereira',
         hora: '00:27',
         mensagem: 'lorem ipsum',
@@ -17,7 +17,7 @@ const DADOS_CardUsuario = [
     },
     {
         id: '2',
-        avatar: require('../images/Macicleide.jpg'),
+        avatar: require('../images/Usuarios/cdMacicleide.jpg'),
         nome: 'Macicleide Jersie',
         hora: '00:54',
         mensagem: 'lorem ipsum',
@@ -25,7 +25,7 @@ const DADOS_CardUsuario = [
     },
     {
         id: '3',
-        avatar: require('../images/Antonio.jpg'),
+        avatar: require('../images/Usuarios/Antonio.jpg'),
         nome: 'Antonio Silva',
         hora: '23:00',
         mensagem: 'Estou bem ...',

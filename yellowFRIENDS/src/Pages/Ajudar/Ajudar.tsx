@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView, TextInput, } from 'react-native';
-import {Avatar, Caption, Title,  } from 'react-native-paper';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+// import {Avatar, Caption, Title,  } from 'react-native-paper';
+// import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function App() {
   return (
@@ -16,22 +16,22 @@ export default function App() {
         
         <View style={styles.section_dadosusuarios}>
         
-        <Avatar.Icon icon = "account-circle" size={300} color="black" style={styles.imagem_usuario}></Avatar.Icon>  
-        <Title style={styles.lbl_nome}>Antônio Silva</Title>
+        {/* <Avatar.Icon icon = "account-circle" size={300} color="black" style={styles.imagem_usuario}></Avatar.Icon>   */}
+        {/* <Title style={styles.lbl_nome}>Antônio Silva</Title> */}
 
         <View style={styles.section_personalinfo}>
 
           <View style={styles.section_nicklocalization}> 
-            <Caption style={styles.lbl_caption}>@tonhão</Caption>
-            <Caption style={styles.lbl_caption}><Icon name="map-marker-alt" size={18} color="gray"/> São Paulo</Caption>
+            {/* <Caption style={styles.lbl_caption}>@tonhão</Caption> */}
+            {/* <Caption style={styles.lbl_caption}><Icon name="map-marker-alt" size={18} color="gray"/> São Paulo</Caption> */}
           </View>
 
             <Image
             source={require('./src/img/VectorTranspa.png')}></Image>
 
           <View style={styles.section_tempoapp}>
-            <Caption style={styles.lbl_caption}>Tempo de APP</Caption>
-            <Caption style={styles.lbl_caption}><Icon name="clock" size={18} color="gray"/> 20h</Caption>
+            {/* <Caption style={styles.lbl_caption}>Tempo de APP</Caption> */}
+            {/* <Caption style={styles.lbl_caption}><Icon name="clock" size={18} color="gray"/> 20h</Caption> */}
           </View>
 
          </View>
