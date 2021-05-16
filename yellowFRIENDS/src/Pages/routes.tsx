@@ -1,21 +1,25 @@
 import React from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 
+// Import de telas
 import TelaAjudar from "./Ajudar/Ajudar";
 import TelaHome from "./Home/Home";
 import TelaBuscarAjuda from "./BuscarAjuda/BuscarAjuda";
 
 const NavBar = createMaterialTopTabNavigator();
 
-export function RotasNavBar (){
+export function RotasNavBar() {
     return (
-        <NavBar.Navigator>
-            <NavBar.Screen
-            name="Home"
-            component = {TelaHome}
-            />
-            
-            {/* <NavBar.Screen
+        
+            <NavBar.Navigator
+                backBehavior="history"
+            >
+                <NavBar.Screen
+                    name="Home"
+                    component={TelaHome}
+                />
+
+                {/* <NavBar.Screen
             name="Ajudar"
             component = {TelaAjudar}
             />
@@ -25,6 +29,6 @@ export function RotasNavBar (){
             name="BuscarAjuda"
             component = {TelaBuscarAjuda}
             /> */}
-        </NavBar.Navigator>
+            </NavBar.Navigator>
     )
 };

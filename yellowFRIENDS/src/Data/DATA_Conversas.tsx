@@ -17,7 +17,7 @@ const DADOS_CardUsuario = [
     },
     {
         id: '2',
-        avatar: require('../images/Usuarios/cdMacicleide.jpg'),
+        avatar: require('../images/Usuarios/Macicleide.jpg'),
         nome: 'Macicleide Jersie',
         hora: '00:54',
         mensagem: 'lorem ipsum',

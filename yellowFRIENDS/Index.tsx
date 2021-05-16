@@ -2,14 +2,24 @@ import React from 'react';
 import { registerRootComponent } from 'expo'
 import { NavigationContainer } from '@react-navigation/native'
 import { RotasNavBar } from './src/Pages/routes';
+import { SafeAreaView, StyleSheet,StatusBar } from 'react-native'
 
 
 function Index() {
     return (
-        <NavigationContainer>
-            <RotasNavBar />
-        </NavigationContainer>
+        <SafeAreaView style ={styles.container}>
+            <NavigationContainer>
+                <RotasNavBar />
+            </NavigationContainer>
+        </SafeAreaView> 
     );
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        marginTop:StatusBar.currentHeight
+    },
+})      
 
 export default registerRootComponent(Index);
