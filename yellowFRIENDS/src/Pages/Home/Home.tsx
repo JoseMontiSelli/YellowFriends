@@ -3,9 +3,11 @@ import React from 'react';
 import { StyleSheet, Text, View, FlatList, SafeAreaView, } from 'react-native';
 import { CardUsuario } from './Components/CardUsuario'
 import { registerRootComponent } from 'expo'
+
 import DADOS_CardUsuario from '../../Data/DATA_Conversas'
   
 export default function Home() {
+
   return (
     <SafeAreaView style={home.main}>
       <StatusBar backgroundColor="#FFD600"/>

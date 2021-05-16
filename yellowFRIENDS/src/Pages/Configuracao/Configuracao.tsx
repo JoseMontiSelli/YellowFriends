@@ -27,6 +27,10 @@ function App() {
                                       statusConfiguracao={item.status} />}
       />
     </SafeAreaView>
+<<<<<<< HEAD:yellowFRIENDS/Configuracao.tsx
+    // teste de conflito, essa é a branch master
+=======
+>>>>>>> teste_de_rotas:yellowFRIENDS/src/Pages/Configuracao/Configuracao.tsx
   )
 };
 
