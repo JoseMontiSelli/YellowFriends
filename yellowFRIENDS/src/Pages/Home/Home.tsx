@@ -8,7 +8,7 @@ import DADOS_CardUsuario from '../../Data/DATA_Conversas'
 export default function Home() {
   return (
     <SafeAreaView style={home.main}>
-      <StatusBar backgroundColor="#FFD600" />
+      <StatusBar backgroundColor="#FFD600"/>
       {/* Sessão de conversas do usuario */}
       <View style={home.titleSection_Background}>
         <Text style={home.titleSection_Texto}>
