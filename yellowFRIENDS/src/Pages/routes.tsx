@@ -10,16 +10,13 @@ const NavBar = createMaterialTopTabNavigator();
 
 export function RotasNavBar() {
     return (
-        
-            <NavBar.Navigator
-                backBehavior="history"
-            >
+            <NavBar.Navigator>
                 <NavBar.Screen
-                    name="Home"
-                    component={TelaHome}
-                />
-
-                {/* <NavBar.Screen
+                    name="Home" 
+                    component={TelaHome} />
+                    
+            {
+            /* <NavBar.Screen
             name="Ajudar"
             component = {TelaAjudar}
             />
@@ -28,7 +25,9 @@ export function RotasNavBar() {
             <NavBar.Screen
             name="BuscarAjuda"
             component = {TelaBuscarAjuda}
-            /> */}
+            /> 
+            
+            */}
             </NavBar.Navigator>
     )
 };

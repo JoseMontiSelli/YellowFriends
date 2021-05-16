@@ -4,12 +4,12 @@ import { NavigationContainer } from '@react-navigation/native'
 import { RotasNavBar } from './src/Pages/routes';
 import { SafeAreaView, StyleSheet,StatusBar } from 'react-native'
 
-
 function Index() {
     return (
         <SafeAreaView style ={styles.container}>
+            <StatusBar backgroundColor="#FFD600"/>
             <NavigationContainer>
-                <RotasNavBar />
+                <RotasNavBar/>
             </NavigationContainer>
         </SafeAreaView> 
     );

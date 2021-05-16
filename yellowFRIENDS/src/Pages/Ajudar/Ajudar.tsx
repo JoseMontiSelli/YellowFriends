@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image, ScrollView, TextInput, } from 'react-nat
 // import {Avatar, Caption, Title,  } from 'react-native-paper';
 // import Icon from 'react-native-vector-icons/FontAwesome5';
 
-export default function App() {
+export default function Ajudar() {
   return (
    
   <ScrollView>

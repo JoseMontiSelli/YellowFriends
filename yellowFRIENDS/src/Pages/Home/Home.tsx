@@ -1,16 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, SafeAreaView, } from 'react-native';
 import { CardUsuario } from './Components/CardUsuario'
-import { registerRootComponent } from 'expo'
 
+// Imports de dados de exibição no flatlist
 import DADOS_CardUsuario from '../../Data/DATA_Conversas'
   
 export default function Home() {
 
   return (
     <SafeAreaView style={home.main}>
-      <StatusBar backgroundColor="#FFD600"/>
+      
       {/* Sessão de conversas do usuario */}
       <View style={home.titleSection_Background}>
         <Text style={home.titleSection_Texto}>
@@ -44,9 +43,9 @@ const home = StyleSheet.create({
     width: '100%',
     flex: 1,
     paddingHorizontal: 20,
-    marginTop: 25,
     flexDirection: 'column',
     alignItems: 'center',
+    backgroundColor: '#fff'
   },
 
   // titulo da sessão

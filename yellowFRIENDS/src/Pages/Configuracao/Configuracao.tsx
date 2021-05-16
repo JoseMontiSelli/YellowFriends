@@ -19,7 +19,7 @@ function App() {
           renderSectionHeader = {({ section: { title } }) => <SectionConfuracao 
                                                             nomeSessao={title} />}
 
-                  // Renderiza os items da lista
+          // Renderiza os items da lista
           renderItem = {({ item }) => <CardConfiguracao
                                       nomeConfiguracao={item.nomeConfiguracao}
                                       descricaoConfiguracao={item.descricao}
@@ -27,10 +27,6 @@ function App() {
                                       statusConfiguracao={item.status} />}
       />
     </SafeAreaView>
-<<<<<<< HEAD:yellowFRIENDS/Configuracao.tsx
-    // teste de conflito, essa é a branch master
-=======
->>>>>>> teste_de_rotas:yellowFRIENDS/src/Pages/Configuracao/Configuracao.tsx
   )
 };
 

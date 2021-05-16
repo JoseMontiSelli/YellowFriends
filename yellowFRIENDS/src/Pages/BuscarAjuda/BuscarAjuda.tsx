@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState, } from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView, ScrollView, FlatList } from 'react-native';
-import { data } from ''
 
 const DATA = [
   {
@@ -22,13 +21,9 @@ const DATA = [
   },
 ];
 
-var jose = "gerente de projeto";
-
 const Item = ({ title }) => (
   <View style={styles.item}>
-    <Text style={styles.title}>
-      {title}
-    </Text>
+    <Text style={styles.title}>{title}</Text>
   </View>
 );
 
@@ -41,12 +36,15 @@ const App = () => {
       <ScrollView style={styles.scrollView}>
         <StatusBar hidden />
 
-
         <View style={styles.cabeçario}>
           <Text style={styles.titulo}> Buscar ajuda </Text>
         </View>
+
         <View style={styles.reconhecimento}>
-          <Text style={styles.reconhec}> RECONHECIMENTO </Text>
+          <Text style={styles.reconhec}>
+            RECONHECIMENTO
+          </Text>
+
           <TouchableOpacity style={styles.recStyle} activeOpacity={0.5}>
             <Image
               source={require('./img/icon_down.png')}
@@ -55,26 +53,48 @@ const App = () => {
           </TouchableOpacity>
 
         </View>
+
         <View style={styles.pef}>
         </View>
-        <View style={styles.tric}></View>
+
+        <View style={styles.tric}>
+        </View>
+
         <View style={styles.perf}>
+
           <Image
             source={require('./img/bia.png')}
             style={styles.imgBia}>
           </Image>
-          <Text style={styles.perfil}> Bea Tricoli</Text>
-          <View style={styles.vwBi}><Text style={styles.txtBi}>grau eh vida, salve mandrake</Text></View>
+
+          <Text style={styles.perfil}>
+            Bea Tricoli
+          </Text>
+
+          <View style={styles.vwBi}>
+            <Text style={styles.txtBi}>grau eh vida, salve mandrake</Text>
+          </View>
+
         </View>
+
+
         <View style={styles.On}>
           <Text style={styles.pesOn}> Pessoas online</Text>
         </View>
+
         <View style={styles.perfTonio}>
-          <Image source={require('./img/Coculuos.png')}
-            style={styles.imgTonhao}>
-          </Image>
-          <Text style={styles.txtTonho}> Antonio Roberto</Text>
-          <Text style={styles.Tselos}> Selos:</Text>
+
+          <Image 
+            source={require('./img/Coculuos.png')}
+            style={styles.imgTonhao}/>
+
+          <Text style={styles.txtTonho}>
+             Antonio Roberto
+          </Text>
+
+          <Text style={styles.Tselos}> 
+            Selos:
+          </Text>
 
           <View style={styles.selosTonho}>
             <FlatList
@@ -84,6 +104,7 @@ const App = () => {
               keyExtractor={item => item.id}
             />
           </View>
+          
         </View>
 
         <View style={styles.perfTonio}>
@@ -128,7 +149,6 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: StatusBar.currentHeight,
   },
   scrollView: {
     backgroundColor: 'white',
