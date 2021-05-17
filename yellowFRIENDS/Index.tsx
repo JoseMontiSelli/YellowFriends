@@ -3,6 +3,7 @@ import { registerRootComponent } from 'expo'
 import { NavigationContainer } from '@react-navigation/native'
 import { RotasNavBar } from './src/Pages/routes';
 import { SafeAreaView, StyleSheet, StatusBar } from 'react-native'
+import Home  from "./src/Components/ButtonHome";
 
 function Index() {
     return (

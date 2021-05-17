@@ -43,6 +43,7 @@ const home = StyleSheet.create({
     width: '100%',
     flex: 1,
     paddingHorizontal: 20,
+    paddingTop: 20,
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#fff'

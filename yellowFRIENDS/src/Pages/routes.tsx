@@ -1,6 +1,10 @@
 import React from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { StyleSheet, StatusBar, View } from 'react-native'
+import { createStackNavigator } from '@react-navigation/stack';
+
+// Icones
+import IconeHome from '../Components/ButtonHome'
 
 
 // Import de telas
@@ -10,31 +14,39 @@ import TelaBuscarAjuda from "./BuscarAjuda/BuscarAjuda";
 import TelaConfiguracoes from "./Configuracao/Configuracao"
 
 const NavBar = createMaterialTopTabNavigator();
+const Stack = createStackNavigator();
 
 export function RotasNavBar() {
     return (
-            <NavBar.Navigator
-                initialRouteName="Home"
-                tabBarOptions={{
+        <NavBar.Navigator
+            initialRouteName="Home"
+            tabBarOptions={{
 
-                    labelStyle: {
-                        fontSize: 12,
-                        fontWeight: '700'
-                    },
-                    style: {
-                        backgroundColor: '#FFE600',
-                        fontWeight: 600
-                    }
-                }}>
-                <NavBar.Screen
-                    name="Home"
-                    component={TelaHome} />
+                labelStyle: {
+                    fontSize: 12,
+                },
+                tabStyle: {
+                    paddingTop: 50,
+                    backgroundColor: '#fff',
 
-                <NavBar.Screen
-                    name="Configurações"
-                    component={TelaConfiguracoes} />
+                },
+                style: {
+                    borderBottomColor: 'transparent'
+                }
 
-            </NavBar.Navigator>
+            }}>
+            <NavBar.Screen
+                name="Home"
+                component={TelaHome}
+                options={{
+                    tabBarIcon: () => (
+                        <IconeHome />
+                    )
+                }}
+            />
+
+        </NavBar.Navigator>
+
     )
 
 };
