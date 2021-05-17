@@ -1,10 +1,7 @@
 import React from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
-import { StyleSheet, StatusBar, View } from 'react-native'
+import { StyleSheet, StatusBar, View, Text } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack';
-
-// Icones
-import IconeHome from '../Components/ButtonHome'
 
 
 // Import de telas
@@ -39,8 +36,12 @@ export function RotasNavBar() {
                 name="Home"
                 component={TelaHome}
                 options={{
-                    tabBarIcon: () => (
-                        <IconeHome />
+                    tabBarLabel: () => (
+                        <View style = {styles.iconContainer}>
+                            <Text>
+                                Home
+                            </Text>
+                        </View>
                     )
                 }}
             />
@@ -48,6 +49,14 @@ export function RotasNavBar() {
         </NavBar.Navigator>
 
     )
-
 };
+
+const styles = StyleSheet.create({
+    iconContainer:{
+        backgroundColor: '#FFD600',
+        width: 30
+    },
+
+}
+)
 
