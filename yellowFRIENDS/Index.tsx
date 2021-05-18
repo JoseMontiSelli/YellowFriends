@@ -1,18 +1,17 @@
 import React from 'react';
 import { registerRootComponent } from 'expo'
 import { NavigationContainer } from '@react-navigation/native'
-import { RotasNavBar } from './src/Pages/routes';
+import { Rotas } from './src/Pages/Routes';
 import { SafeAreaView, StyleSheet, StatusBar } from 'react-native'
-import Home  from "./src/Components/ButtonHome";
 
 function Index() {
     return (
         <SafeAreaView
         style = {styles.container}
         >
-            <StatusBar backgroundColor="#FFD600"/>
+            <StatusBar backgroundColor="#FFD600" barStyle="dark-content"/>
             <NavigationContainer>
-                <RotasNavBar/>
+                <Rotas/>
             </NavigationContainer>
         </SafeAreaView> 
     );

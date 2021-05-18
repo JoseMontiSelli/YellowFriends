@@ -3,14 +3,14 @@ const DADOS_Configuracoes = [
         title: "Configurações indefinidas 1",
         data: [
             {
-                icone: require('../images/icons/icon_notification.png'),
+                icone: require('../images/icons/IconNotification.png'),
                 nomeConfiguracao: "Configuracao Aleatoria 1",
                 descricao: "Alguma coisa relacionada ao chat",
                 status: true
             },
 
             {
-                icone: require('../images/icons/icon_notification.png'),
+                icone: require('../images/icons/IconNotification.png'),
                 nomeConfiguracao: "Configuracao Aleatoria 1",
                 descricao: "Alguma coisa relacionada ao chat",
                 status: true
@@ -21,7 +21,7 @@ const DADOS_Configuracoes = [
         title: "Configurações indefinidas 2",
         data: [
             {
-                icone: require('../images/icons/icon_notification.png'),
+                icone: require('../images/icons/IconNotification.png'),
                 nomeConfiguracao: "Configuracao Aleatoria 2",
                 descricao: "Alguma coisa relacionada ao perfil",
                 status: true
@@ -30,7 +30,7 @@ const DADOS_Configuracoes = [
             {
                 nomeConfiguracao: "Configuracao Aleatoria 2",
                 descricao: "Alguma coisa relacionada ao perfil",
-                icone: require('../images/icons/icon_notification.png'),
+                icone: require('../images/icons/IconNotification.png'),
                 status: true
             }
         ]

@@ -16,7 +16,8 @@ export default function ScreenHome() {
     return (
         <SafeAreaView style={home.main}>
             {/* Indicador de sessão de conversas do usuario */}
-            <Template_TittleBubble text={"conversas"} />
+            <Template_TittleBubble text={"Conversas"} />
+            
             {/* LISTA DE CARDS DO USUARIO */}
             <FlatList style={home.mainCards}
                 data={DADOS_CardUsuario} // De onde vem os dados do usuario

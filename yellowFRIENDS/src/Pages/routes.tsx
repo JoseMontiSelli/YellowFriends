@@ -15,7 +15,7 @@ import TelaConfiguracoes from "./Configuracao/Configuracao"
 const NavBar = createMaterialTopTabNavigator();
 const Stack = createStackNavigator();
 
-export function RotasNavBar() {
+export function Rotas() {
     return (
         <NavBar.Navigator
             initialRouteName="Home"
@@ -37,7 +37,7 @@ export function RotasNavBar() {
                 options = {{
                     tabBarLabel: () => (<NavHome/>)
                 }}
-            />
+            />   
 
         </NavBar.Navigator>
 
