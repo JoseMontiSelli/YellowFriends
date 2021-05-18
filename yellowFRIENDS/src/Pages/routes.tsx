@@ -1,8 +1,10 @@
 import React from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
-import { StyleSheet, StatusBar, View, Text } from 'react-native'
+import { StyleSheet, View, Text, Image } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack';
 
+// Import de templates
+import NavHome from '../Components/NavHome'
 
 // Import de telas
 import TelaAjudar from "./Ajudar/Ajudar";
@@ -20,29 +22,20 @@ export function RotasNavBar() {
             tabBarOptions={{
 
                 labelStyle: {
-                    fontSize: 12,
+                    fontSize: 30,
                 },
-                tabStyle: {
-                    paddingTop: 50,
-                    backgroundColor: '#fff',
-
+                style:{
+                    elevation: 0
                 },
-                style: {
-                    borderBottomColor: 'transparent'
+                indicatorStyle:{
+                    backgroundColor: 'transparent',
                 }
-
             }}>
             <NavBar.Screen
                 name="Home"
                 component={TelaHome}
-                options={{
-                    tabBarLabel: () => (
-                        <View style = {styles.iconContainer}>
-                            <Text>
-                                Home
-                            </Text>
-                        </View>
-                    )
+                options = {{
+                    tabBarLabel: () => (<NavHome/>)
                 }}
             />
 
@@ -51,12 +44,5 @@ export function RotasNavBar() {
     )
 };
 
-const styles = StyleSheet.create({
-    iconContainer:{
-        backgroundColor: '#FFD600',
-        width: 30
-    },
 
-}
-)
 

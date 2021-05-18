@@ -9,7 +9,7 @@ interface DadosUsuario {
     isReaded: boolean;
 }
 
-export function CardUsuario({ nome, hora, mensagem, avatar, isReaded }: DadosUsuario) {
+export function Template_CardUsuario({ nome, hora, mensagem, avatar, isReaded }: DadosUsuario) {
 
     if (isReaded == false) {
         return (
@@ -75,15 +75,15 @@ const styleCardUsuario = StyleSheet.create({
     // IMAGEM DO USUARIO
     component_image: {
         height: '100%',
-        width: '30%',
+        width: '35%',
 
         justifyContent: 'center',
         alignItems: 'center'
     },
     // AVATAR
     image_Avatar: {
-        height: 74,
-        width: 74,
+        height: 82,
+        width: 82,
         borderRadius: 100
     },
 
@@ -92,7 +92,7 @@ const styleCardUsuario = StyleSheet.create({
     cardUsuario_Infos: {
         flexDirection: 'column',
         paddingVertical: 10,
-        width: '70%',
+        width: '65%',
         height: '100%'
     },
 
