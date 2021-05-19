@@ -33,6 +33,12 @@ export default function TopBarNav() {
       <TopBar.Screen name="Home3" component={Home}
         options = {{ tabBarLabel: () => (<Cursor/>) }}
        />
+      <TopBar.Screen name="Home4" component={Home}
+        options = {{ tabBarLabel: () => (<Cursor/>) }}
+       />
+      <TopBar.Screen name="Home5" component={Home}
+        options = {{ tabBarLabel: () => (<Cursor/>) }}
+       />
 
     </TopBar.Navigator>
   );
