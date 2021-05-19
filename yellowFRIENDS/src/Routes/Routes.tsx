@@ -19,7 +19,7 @@ export function Rotas() {
     return (
         <Stack.Navigator 
         screenOptions= {
-            { headerStyle: { backgroundColor: '#FFE600'},
+            { headerStyle: { backgroundColor: '#FFD600'},
         }
         }>
             <Stack.Screen name="Home" component={TopBarNav} />
