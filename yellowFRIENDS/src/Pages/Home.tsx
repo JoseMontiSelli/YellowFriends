@@ -6,13 +6,13 @@ import { StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native'
 import { FlatList } from 'react-native'
 // Templates
-import { Template_CardUsuario } from './Template_CardUsuario'
-import { Template_TittleBubble } from './Template_TitleBubble'
+import { Template_CardUsuario } from './Components/Template_CardUsuario'
+import { Template_TittleBubble } from './Components/Template_TitleBubble'
 // Dados pra popular a flatlist
-import DADOS_CardUsuario from '../../../Data/DATA_Conversas'
+import DADOS_CardUsuario from '../Data/DATA_Conversas'
 
 
-export default function ScreenHome() {
+export function Home() {
     return (
         <SafeAreaView style={home.main}>
             {/* Indicador de sessão de conversas do usuario */}

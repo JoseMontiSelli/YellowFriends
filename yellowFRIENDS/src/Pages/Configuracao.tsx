@@ -3,10 +3,10 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, SectionList } from 'react-native';
 
 // Dados das configurações
-import DADOS_Configuracoes from '../../Data/DATA_Configuracoes'
+import DADOS_Configuracoes from '../Data/DATA_Configuracoes'
 // Templates
 import CardConfiguracao from './Components/Template_CardConfiguracoes';
-import SectionConfuracao from '../../Components/SectionConfiguracao';
+import SectionConfuracao from './Components/Template_Configuracao';
 
 export default function App() {
   return (

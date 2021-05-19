@@ -1,14 +1,12 @@
 import React from 'react';
 import { registerRootComponent } from 'expo'
 import { NavigationContainer } from '@react-navigation/native'
-import { Rotas } from './src/Pages/Routes';
+import { Rotas } from './src/Routes/Routes';
 import { SafeAreaView, StyleSheet, StatusBar } from 'react-native'
 
 function Index() {
     return (
-        <SafeAreaView
-        style = {styles.container}
-        >
+        <SafeAreaView style = {styles.container}>
             <StatusBar backgroundColor="#FFD600" barStyle="dark-content"/>
             <NavigationContainer>
                 <Rotas/>

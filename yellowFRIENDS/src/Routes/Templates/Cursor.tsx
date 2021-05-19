@@ -1,12 +1,12 @@
 import React from 'react'
 import {View, Image, Text, StyleSheet} from 'react-native'
 
-export default function NavHome() {
+export function Cursor() {
     return (
         <View>
 
         <View style={styles.iconContainer}>
-            <Image style = {styles.icon} source = {require('../images/icons/IconHome.png')}/>
+            <Image style = {styles.icon} source = {require('../../images/icons/IconHome.png')}/>
         </View>
 
         <Text style = {styles.iconText}>
