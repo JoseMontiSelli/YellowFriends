@@ -9,15 +9,21 @@ interface bubbleProps {
 
 export function Template_TittleBubble(props: bubbleProps) {
     return (
-        <View style={styleTittle.titleSection_Background}>
-            <Text style={styleTittle.titleSection_Texto}>
-                {props.text}
-            </Text>
+        <View style = {styleTittle.main}>
+            <View style={styleTittle.titleSection_Background}>
+                <Text style={styleTittle.titleSection_Texto}>
+                    {props.text}
+                </Text>
+            </View>
         </View>
     )
 }
 
 const styleTittle = StyleSheet.create({
+    main:{
+        width: '100%',
+        alignItems: 'center'
+    },
     // titulo da sessão
     titleSection_Background: {
         backgroundColor: '#FFE600',
