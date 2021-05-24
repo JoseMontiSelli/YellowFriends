@@ -42,8 +42,16 @@ const DADOS_CardUsuario = [
     },
     {
         title:'Grupos',
-        data: [{
-        }]
+        data: [
+            {
+                id: '3',
+                avatar: require('../images/Usuarios/Antonio.jpg'),
+                nome: 'Antonio Silva',
+                hora: '23:00',
+                mensagem: 'Estou bem ...',
+                isReaded: true
+            }
+        ]
     }
 
 ];

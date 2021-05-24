@@ -22,7 +22,9 @@ export function Template_TittleBubble(props: bubbleProps) {
 const styleTittle = StyleSheet.create({
     main:{
         width: '100%',
-        alignItems: 'center'
+        alignItems: 'center',
+        
+        marginTop: 20
     },
     // titulo da sessão
     titleSection_Background: {
