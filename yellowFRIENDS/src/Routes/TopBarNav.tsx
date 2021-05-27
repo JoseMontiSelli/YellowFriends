@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions } from 'react-native';
+import { Dimensions, View, Text } from 'react-native';
 // Imports do react navigator
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
@@ -16,20 +16,22 @@ const TabSize = Dimensions.get('window').width
 export default function TopBarNav() {
 
   return (
+
     <TopBar.Navigator initialRouteName="Home"
       tabBarOptions={
         {
           labelStyle: { 
             fontSize: 30,
-            },
+          },
 
           style:{ 
-            elevation: 0,
+            elevation: 3,
+            height: 70,
           },
 
           tabStyle: {
             width: TabSize/3,
-            height: 70
+            height: 70,
           },
 
           indicatorStyle:{
@@ -41,9 +43,9 @@ export default function TopBarNav() {
             top: 0,
 
             width: TabSize/8,
-            marginLeft: TabSize/10,
+            marginLeft: TabSize/9.5,
 
-            height: 50,  
+            height: 48,  
             borderBottomEndRadius: 35,
             borderBottomStartRadius: 35, 
           }
@@ -61,7 +63,7 @@ export default function TopBarNav() {
       />
       <TopBar.Screen name="Buscar ajuda" component={Home}
         options={{
-          tabBarLabel: () => (<Cursor/> )
+          tabBarLabel: () => (<Cursor labelName={'Buscar Ajuda'} iconName={'buscar ajuda'}/> )
         }}
       />
     </TopBar.Navigator>
