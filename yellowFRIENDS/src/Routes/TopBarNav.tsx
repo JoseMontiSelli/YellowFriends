@@ -5,9 +5,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 
 // Import de telas
 import { Home } from '../Pages/Home'
-import Configuracao from "../Pages/Configuracao";
 import { Cursor } from './Templates/Cursor'
-import IconHome from '../images/icons/IconHome'
 
 
 const TopBar = createMaterialTopTabNavigator();
