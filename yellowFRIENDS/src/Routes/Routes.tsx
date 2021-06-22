@@ -14,16 +14,18 @@ const Stack = createStackNavigator();
 
 export function Rotas() {
     return (
-        <Stack.Navigator 
-        screenOptions = {{ 
-                headerStyle: 
+        <Stack.Navigator
+            screenOptions={{
+                headerStyle:
                     { backgroundColor: '#FFE600', height: 82, elevation: 0 },
-                headerTitleStyle : 
-                    {fontSize:22, fontWeight: 'bold' }
-                
+                headerTitleStyle:
+                    { fontSize: 22, fontWeight: 'bold' }
+
             }}>
-            <Stack.Screen name="Minha Rede de ajuda" component={TopBarNav} 
-            options = {({route}) => ({headerTitle: NomeDaRota(route) })} />
+            <Stack.Screen
+                name="Minha Rede de ajuda"
+                component={TopBarNav}
+                options={({ route }) => ({ headerTitle: NomeDaRota(route) })} />
 
         </Stack.Navigator>
     )

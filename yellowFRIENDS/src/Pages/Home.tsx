@@ -6,40 +6,11 @@ import { SectionList } from 'react-native'
 // Templates
 import { Template_CardUsuario } from './Components/Template_CardUsuario'
 import { Template_TittleBubble } from './Components/Template_TitleBubble'
-// Dados pra popular a flatlist
-import { lastArrayIndex } from '../Data/DATA_HistoricoDeConversas'
-import { useEffect } from 'react';
-import { SalasDeChat } from '../Database/Collections';
-import { useState } from 'react';
-import DADOS_ConversasUsuario from '../Data/DATA_HistoricoDeConversas';
+// Dados pra popular a flatlist;
+import DADOS_CardUsuario from '../Data/DATA_HistoricoDeConversas';
 
 export function Home() {
 
-    var [mensagens, setMensagens] = useState([])
-    useEffect(() => {
-        const infosMensagens: any = []
-        SalasDeChat.onSnapshot((snapshot) => {
-            snapshot.forEach((doc) => {
-                var data = {
-                    id: lastArrayIndex(doc.data().Mensagens).IdMensagem,
-                    avatar: require('../images/Usuarios/Antonio.jpg'),
-                    nome: lastArrayIndex(doc.data().Mensagens).NomeUsuario,
-                    mensagem: lastArrayIndex(doc.data().Mensagens).Texto,
-                    hora: '20:30',
-                    isReaded: true,
-                }
-                infosMensagens.push(data)
-            })
-        })
-        setMensagens(infosMensagens)
-    }, [])
-
-    const DADOS_CardUsuario = [{
-        title: 'Conversas',
-        data: mensagens
-    }];
-
-    console.log(DADOS_CardUsuario[0].data)
     return (
         <SafeAreaView style={home.main}>
             {/* LISTA DE CARDS DO USUARIO */}

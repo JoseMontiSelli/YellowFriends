@@ -29,6 +29,8 @@ const chatRoomDataProvider = () => {
 
 var testData = chatRoomDataProvider()
 
+console.log(testData)
+
 const DADOS_CardUsuario = [{
     title: 'Conversas',
     data: testData
