@@ -7,6 +7,10 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { Home } from '../Pages/Home'
 import { Cursor } from './Templates/Cursor'
 
+import IconHome from '../images/icons/IconHome'
+import Login from '../Pages/Login'
+
+
 
 const TopBar = createMaterialTopTabNavigator();
 const TabSize = Dimensions.get('window').width
@@ -48,7 +52,7 @@ export default function TopBarNav() {
         }
       }
     >
-      <TopBar.Screen name="Seu Perfil" component={Home}
+      <TopBar.Screen name="Seu Perfil" component={Login}
         options={{ tabBarLabel: () => (<Cursor iconName={'ajudar'} labelName={'Ajudar'} />) }}
       />
       <TopBar.Screen name="Minha rede de ajuda" component={Home}

@@ -1,5 +1,6 @@
 
 import React from 'react';
+<<<<<<< HEAD
 import {
   StyleSheet,
   Text,
@@ -11,7 +12,14 @@ import {
 } from 'react-native';
 
 
+
+
 export default function Login() {
+  
+  
+       
+
+
   return (
     <View style={styles.container}>
 
@@ -21,6 +29,7 @@ export default function Login() {
 
         {/* LBL QuemSomos */}
         <Text style={styles.lbl_quemsomos}>Quem somos nós</Text>
+
 
         {/* Logo YellowFRIENDS */}
         <View style={styles.icon_logo}>
@@ -39,8 +48,22 @@ export default function Login() {
             source={require('./src/img/lbl_Slogan.png')}
             style={styles.slogan}></Image>
 
+
+          {/* Logo YellowFRIENDS */}
+          <View style={styles.icon_logo}>
+            <Image
+              source={require('../images/Logo.png')} 
+            />
+
+          {/* Letreiro */}
+           
+
+          {/* Slogan */}
+            
+
           {/* Caixa de texto */}
           <TextInput placeholder='Digite seu E-mail aqui' style={styles.input_Login} />
+
 
         </View>
 
@@ -53,6 +76,21 @@ export default function Login() {
           source={require('./src/img/Vector-body.png')}
           style={styles.vector_corpo}
         />
+=======
+          </View>
+          
+          {/* Icon perfil */} 
+          
+            
+        </View>
+
+        {/* Buttons */} 
+        <View style = {styles.btn_Login}>
+          
+          <TouchableOpacity >
+              <Text style = {styles.login} onPress={()=>GoogleSignIn.initAsync()} >Login</Text>
+          </TouchableOpacity>
+>>>>>>> conexaologin
 
       </View>
 
@@ -82,7 +120,7 @@ export default function Login() {
 
 
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -191,4 +229,11 @@ const styles = StyleSheet.create({
     top: '90%',
     bottom: '54.42%'
   },
+<<<<<<< HEAD
 });
+=======
+ 
+  
+});  
+
+>>>>>>> conexaologin
