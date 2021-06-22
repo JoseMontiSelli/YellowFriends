@@ -1,78 +1,86 @@
 
 import React from 'react';
-import { StyleSheet, Text, View, Fragment, TouchableOpacity, TextInput, Image, ScrollView } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  TextInput,
+  Image,
+  ScrollView
+} from 'react-native';
 
 
-export default function App() {
+export default function Login() {
   return (
     <View style={styles.container}>
-      
+
 
       {/* Metade do background amarelo */}
       <View style={styles.viewbackground}>
-       
-       {/* LBL QuemSomos */}
+
+        {/* LBL QuemSomos */}
         <Text style={styles.lbl_quemsomos}>Quem somos nós</Text>
 
-          {/* Logo YellowFRIENDS */}
-          <View style={styles.icon_logo}>
-            <Image
-              source={require('./src/img/icon_Logo.png')} 
-            />
+        {/* Logo YellowFRIENDS */}
+        <View style={styles.icon_logo}>
+          <Image
+            source={require('./src/img/icon_Logo.png')}
+          />
 
           {/* Letreiro */}
-            <Image
-            source={require('./src/img/yellowFRIENDS.png')} 
+          <Image
+            source={require('./src/img/yellowFRIENDS.png')}
             style={styles.letreiro}
-            />
+          />
 
           {/* Slogan */}
-            <Image
+          <Image
             source={require('./src/img/lbl_Slogan.png')}
             style={styles.slogan}></Image>
 
           {/* Caixa de texto */}
-          <TextInput placeholder= 'Digite seu E-mail aqui' style={styles.input_Login}/>
-
-          </View>
-          
-          {/* Icon perfil */} 
-          <Image
-            source={require('./src/img/Vector-head.png')}
-            style={styles.vector_cabeça}
-          />
-          <Image
-            source={require('./src/img/Vector-body.png')}
-            style={styles.vector_corpo}
-          />
-            
-        </View>
-
-        {/* Buttons */} 
-        <View style = {styles.btn_Login}>
-          
-          <TouchableOpacity >
-              <Text style = {styles.login} >Login</Text>
-          </TouchableOpacity>
+          <TextInput placeholder='Digite seu E-mail aqui' style={styles.input_Login} />
 
         </View>
 
-        <View style = {styles.btn_Cadastro}>
+        {/* Icon perfil */}
+        <Image
+          source={require('./src/img/Vector-head.png')}
+          style={styles.vector_cabeça}
+        />
+        <Image
+          source={require('./src/img/Vector-body.png')}
+          style={styles.vector_corpo}
+        />
 
-          <TouchableOpacity >
-            <Text style = {styles.cadastro}>Cadastro</Text>
-          </TouchableOpacity>
+      </View>
 
-          <Text style={styles.lbl_semcadastro}>Ir sem cadastro</Text>
+      {/* Buttons */}
+      <View style={styles.btn_Login}>
 
-        </View>
+        <TouchableOpacity >
+          <Text style={styles.login}>Login</Text>
+        </TouchableOpacity>
 
-        
-          
-        
-    </View>  
-      
-    
+      </View>
+
+      <View style={styles.btn_Cadastro}>
+
+        <TouchableOpacity >
+          <Text style={styles.cadastro}>Cadastro</Text>
+        </TouchableOpacity>
+
+        <Text style={styles.lbl_semcadastro}>Ir sem cadastro</Text>
+
+      </View>
+
+
+
+
+    </View>
+
+
   );
 }
 
@@ -88,36 +96,36 @@ const styles = StyleSheet.create({
   viewbackground: {
     flex: 1,
     backgroundColor: '#FFE600',
-    top:-214,
+    top: -214,
     height: 478,
     alignItems: 'center',
     justifyContent: 'center',
   },
   /* LBL QuemSomos */
-  lbl_quemsomos:{
+  lbl_quemsomos: {
     position: 'absolute',
     width: 500,
     height: 25,
-    left:'60%',
+    left: '60%',
     top: '15%',
-    fontWeight:'bold'
+    fontWeight: 'bold'
   },
   /* Logo YellowFRIENDS */
-  icon_logo:{
+  icon_logo: {
     flex: 1,
-    alignItems:'center',
+    alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
   },
   /* Letreiro */
-  letreiro:{
+  letreiro: {
     position: 'absolute',
     width: 315,
     height: 35,
     top: 170
   },
   /* Slogan */
-  slogan:{
+  slogan: {
     position: 'absolute',
     top: '120%',
     width: 318,
@@ -132,7 +140,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     borderRadius: 9,
     justifyContent: 'center',
-    textAlign:'center'
+    textAlign: 'center'
   },
   /* Buttons */
   btn_Login: {
@@ -163,8 +171,8 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 24
   },
-  
-  lbl_semcadastro:{
+
+  lbl_semcadastro: {
     position: 'absolute',
     left: '23%',
     top: '240%',
@@ -177,17 +185,10 @@ const styles = StyleSheet.create({
     top: '87%',
     bottom: '55.65%'
   },
-  vector_corpo:{
+  vector_corpo: {
     position: 'absolute',
     left: '79%',
     top: '90%',
     bottom: '54.42%'
   },
- 
-  
-  
-    
-  
-  
-  
 });

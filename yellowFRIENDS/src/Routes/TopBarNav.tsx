@@ -14,19 +14,16 @@ const TabSize = Dimensions.get('window').width
 export default function TopBarNav() {
 
   return (
-
     <TopBar.Navigator initialRouteName="Home"
       tabBarOptions={
         {
           labelStyle: { 
             fontSize: 30,
           },
-
           style:{ 
             elevation: 3,
             height: 70,
           },
-
           tabStyle: {
             width: TabSize/3,
             height: 70,
