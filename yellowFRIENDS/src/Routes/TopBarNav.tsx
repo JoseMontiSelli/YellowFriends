@@ -8,6 +8,7 @@ import { Home } from '../Pages/Home'
 import Configuracao from "../Pages/Configuracao";
 import { Cursor } from './Templates/Cursor'
 import IconHome from '../images/icons/IconHome'
+import Login from '../Pages/Login'
 
 
 const TopBar = createMaterialTopTabNavigator();
@@ -53,7 +54,7 @@ export default function TopBarNav() {
         }
       }
     >
-      <TopBar.Screen name="Seu Perfil" component={Home}
+      <TopBar.Screen name="Seu Perfil" component={Login}
         options={{ tabBarLabel: () => (<Cursor iconName={'ajudar'} labelName={'Ajudar'} />) }}
       />
       <TopBar.Screen name="Minha rede de ajuda" component={Home}

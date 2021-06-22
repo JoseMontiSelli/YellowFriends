@@ -1,10 +1,27 @@
 
 import React from 'react';
-import { StyleSheet, Text, View, Fragment, TouchableOpacity, TextInput, Image, ScrollView } from 'react-native';
-import Icon from 'react-native-vector-icons/Feather'
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image, ScrollView } from 'react-native';
+import {GoogleSignin, GoogleSigninButton, statusCodes} from '@react-native-google-signin/google-signin';
+import GoogleAuthProvider from 'firebase/auth';
+import firebase from 'firebase/app'
+import * as Google from 'expo-google-app-auth';
+import * as AppAuth from 'expo-app-auth';
+import * as GoogleSignIn from 'expo-google-sign-in';
 
 
-export default function App() {
+
+
+
+export default function Login() {
+  
+  
+  
+
+  
+ 
+ 
+      
+
   return (
     <View style={styles.container}>
       
@@ -18,34 +35,21 @@ export default function App() {
           {/* Logo YellowFRIENDS */}
           <View style={styles.icon_logo}>
             <Image
-              source={require('./src/img/icon_Logo.png')} 
+              source={require('../images/Logo.png')} 
             />
 
           {/* Letreiro */}
-            <Image
-            source={require('./src/img/yellowFRIENDS.png')} 
-            style={styles.letreiro}
-            />
+           
 
           {/* Slogan */}
-            <Image
-            source={require('./src/img/lbl_Slogan.png')}
-            style={styles.slogan}></Image>
-
+            
           {/* Caixa de texto */}
           <TextInput placeholder= 'Digite seu E-mail aqui' style={styles.input_Login}/>
 
           </View>
           
           {/* Icon perfil */} 
-          <Image
-            source={require('./src/img/Vector-head.png')}
-            style={styles.vector_cabeça}
-          />
-          <Image
-            source={require('./src/img/Vector-body.png')}
-            style={styles.vector_corpo}
-          />
+          
             
         </View>
 
@@ -53,7 +57,7 @@ export default function App() {
         <View style = {styles.btn_Login}>
           
           <TouchableOpacity >
-              <Text style = {styles.login} >Login</Text>
+              <Text style = {styles.login} onPress={()=>GoogleSignIn.initAsync()} >Login</Text>
           </TouchableOpacity>
 
         </View>
@@ -75,7 +79,7 @@ export default function App() {
       
     
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -186,9 +190,5 @@ const styles = StyleSheet.create({
   },
  
   
-  
-    
-  
-  
-  
-});
+});  
+
