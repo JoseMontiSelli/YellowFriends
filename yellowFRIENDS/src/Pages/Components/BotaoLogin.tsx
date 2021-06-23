@@ -19,6 +19,7 @@ export function BotaoLogin({ tela }: any) {
 
 const styles = StyleSheet.create({
     btn_Login: {
+        position:'absolute',
         backgroundColor: '#FFD600',
         borderRadius: 30,
         top: '60%',

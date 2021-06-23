@@ -31,6 +31,8 @@ export function Login() {
       </View>
 
       {/* Buttons */}
+      botao(tela)
+
         <BotaoLogin tela='TopBarNav'/>
         <BotaoCadastrar tela='Cadastrar-se'/>
     </View>

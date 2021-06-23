@@ -23,16 +23,10 @@ export function Rotas() {
                 headerTitleStyle:
                     { fontSize: 22, fontWeight: 'bold' }
             }}>
-            <Stack.Screen
-            options={{headerShown:false}}
-            name="Login"
-            component={Login}
-            />
-            <Stack.Screen
-            options={{headerShown:false}}
-            name="Cadastrar-se"
-            component={Cadastro}
-            />
+            <Stack.Screen name="Login" component={Login} />
+
+            <Stack.Screen name="Cadastrar-se" component={Cadastro}/>
+
             <Stack.Screen
                 name="TopBarNav"
                 component={TopBarNav}
