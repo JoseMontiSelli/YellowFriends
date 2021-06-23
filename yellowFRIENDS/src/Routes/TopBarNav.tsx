@@ -7,6 +7,9 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { Home } from '../Pages/Home'
 import { Cursor } from './Templates/Cursor'
 
+import IconHome from '../images/icons/IconHome'
+
+
 
 const TopBar = createMaterialTopTabNavigator();
 const TabSize = Dimensions.get('window').width
@@ -14,19 +17,16 @@ const TabSize = Dimensions.get('window').width
 export default function TopBarNav() {
 
   return (
-
     <TopBar.Navigator initialRouteName="Home"
       tabBarOptions={
         {
           labelStyle: { 
             fontSize: 30,
           },
-
           style:{ 
             elevation: 3,
             height: 70,
           },
-
           tabStyle: {
             width: TabSize/3,
             height: 70,

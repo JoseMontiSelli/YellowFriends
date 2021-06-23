@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState, } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 
-export default function App() {
+export function Cadastro() {
 
   
   const [nome,setNome] = useState('');
@@ -17,11 +17,8 @@ export default function App() {
  
   }
   return (
-
     <View style={styles.container}>
       <StatusBar hidden />
-
-      
       <View style={styles.cabeçario}>
         <Text style={styles.titulo}>
            Cadastre-se 

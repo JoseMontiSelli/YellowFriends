@@ -8,7 +8,7 @@ import DADOS_Configuracoes from '../Data/DATA_Configuracoes'
 import CardConfiguracao from './Components/Template_CardConfiguracoes';
 import SectionConfuracao from './Components/Template_Configuracao';
 
-export default function App() {
+export default function Configuracao() {
   return (
     <SafeAreaView style={info.main}>
       <SectionList style={info.list}
