@@ -4,8 +4,6 @@ import { Text } from 'react-native';
 import { View } from 'react-native';
 import { TextInput } from 'react-native';
 import { Image } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { TouchableOpacity } from 'react-native';
 import { BotaoLogin } from './Components/BotaoLogin';
 import { BotaoCadastrar } from './Components/BotaoCadastrar';
 
