@@ -25,12 +25,9 @@ export function Login() {
           {/* Caixa de texto */}
           <TextInput placeholder='Digite seu E-mail aqui' style={styles.input_Login} />
         </View>
-        {/* Icon perfil */}
       </View>
 
       {/* Buttons */}
-      botao(tela)
-
         <BotaoLogin tela='TopBarNav'/>
         <BotaoCadastrar tela='Cadastrar-se'/>
     </View>

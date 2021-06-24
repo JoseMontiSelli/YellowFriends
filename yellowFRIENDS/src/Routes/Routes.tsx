@@ -24,9 +24,7 @@ export function Rotas() {
                     { fontSize: 22, fontWeight: 'bold' }
             }}>
             <Stack.Screen name="Login" component={Login} />
-
             <Stack.Screen name="Cadastrar-se" component={Cadastro}/>
-
             <Stack.Screen
                 name="TopBarNav"
                 component={TopBarNav}
