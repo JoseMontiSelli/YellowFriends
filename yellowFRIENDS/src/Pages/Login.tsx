@@ -1,5 +1,5 @@
-
 import React from 'react';
+<<<<<<< HEAD
 
 import {
   StyleSheet,
@@ -18,54 +18,35 @@ export default function Login() {
   
   
        
+=======
+import { StyleSheet } from 'react-native';
+import { Text } from 'react-native';
+import { View } from 'react-native';
+import { TextInput } from 'react-native';
+import { Image } from 'react-native';
+import { BotaoLogin } from './Components/BotaoLogin';
+import { BotaoCadastrar } from './Components/BotaoCadastrar';
+>>>>>>> 906490900c3c3d44e3425ebf9fd9679958e1a2c6
 
+export function Login() {
 
   return (
     <View style={styles.container}>
-
-
       {/* Metade do background amarelo */}
       <View style={styles.viewbackground}>
-
         {/* LBL QuemSomos */}
-        <Text style={styles.lbl_quemsomos}>Quem somos nós</Text>
-
-
+        <Text style={styles.lbl_quemsomos}> Quem somos nós </Text>
         {/* Logo YellowFRIENDS */}
         <View style={styles.icon_logo}>
-          <Image
-            source={require('./src/img/icon_Logo.png')}
-          />
-
+          <Image source={require('../images/Logo.png')} />
           {/* Letreiro */}
-          <Image
-            source={require('./src/img/yellowFRIENDS.png')}
-            style={styles.letreiro}
-          />
-
+          <Text>yellowFRIENDS</Text>
           {/* Slogan */}
-          <Image
-            source={require('./src/img/lbl_Slogan.png')}
-            style={styles.slogan}></Image>
-
-
-          {/* Logo YellowFRIENDS */}
-          <View style={styles.icon_logo}>
-            <Image
-              source={require('../images/Logo.png')} 
-            />
-
-          {/* Letreiro */}
-           
-
-          {/* Slogan */}
-            
-
+          <Text>A tecnologia construida em comunidade</Text>
           {/* Caixa de texto */}
           <TextInput placeholder='Digite seu E-mail aqui' style={styles.input_Login} />
-
-
         </View>
+<<<<<<< HEAD
 
         {/* Icon perfil */}
         <Image
@@ -92,35 +73,17 @@ export default function Login() {
           </TouchableOpacity>
 
 
+=======
+>>>>>>> 906490900c3c3d44e3425ebf9fd9679958e1a2c6
       </View>
 
       {/* Buttons */}
-      <View style={styles.btn_Login}>
-
-        <TouchableOpacity >
-          <Text style={styles.login}>Login</Text>
-        </TouchableOpacity>
-
-      </View>
-
-      <View style={styles.btn_Cadastro}>
-
-        <TouchableOpacity >
-          <Text style={styles.cadastro}>Cadastro</Text>
-        </TouchableOpacity>
-
-        <Text style={styles.lbl_semcadastro}>Ir sem cadastro</Text>
-
-      </View>
-
-
-
-
+        <BotaoLogin tela='TopBarNav'/>
+        <BotaoCadastrar tela='Cadastrar-se'/>
     </View>
+  )
+}
 
-
-  );
-};
 
 const styles = StyleSheet.create({
   container: {
@@ -181,20 +144,6 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   /* Buttons */
-  btn_Login: {
-    position: 'absolute',
-    backgroundColor: '#FFD600',
-    borderRadius: 30,
-    top: '60%',
-    width: 290,
-    height: 53,
-  },
-  login: {
-    top: 5,
-    textAlign: 'center',
-    color: 'white',
-    fontSize: 24,
-  },
   btn_Cadastro: {
     position: 'absolute',
     backgroundColor: '#FFD600',
@@ -229,6 +178,7 @@ const styles = StyleSheet.create({
     top: '90%',
     bottom: '54.42%'
   },
+<<<<<<< HEAD
 
 });
 
@@ -237,3 +187,6 @@ const styles = StyleSheet.create({
 
 
 
+=======
+})
+>>>>>>> 906490900c3c3d44e3425ebf9fd9679958e1a2c6

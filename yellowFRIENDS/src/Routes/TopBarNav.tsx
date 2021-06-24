@@ -2,23 +2,19 @@ import React from 'react';
 import { Dimensions, View, Text } from 'react-native';
 // Imports do react navigator
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-
 // Import de telas
 import { Home } from '../Pages/Home'
+// import { Ajudar } from '../Pages/Ajudar'
+// import BuscarAjuda from '../Pages/BuscarAjuda'
+// Import de templates
 import { Cursor } from './Templates/Cursor'
-
-import IconHome from '../images/icons/IconHome'
-import Login from '../Pages/Login'
-
-
 
 const TopBar = createMaterialTopTabNavigator();
 const TabSize = Dimensions.get('window').width
 
 export default function TopBarNav() {
-
   return (
-    <TopBar.Navigator initialRouteName="Home"
+    <TopBar.Navigator initialRouteName="Minha rede de ajuda"
       tabBarOptions={
         {
           labelStyle: { 
@@ -48,12 +44,12 @@ export default function TopBarNav() {
             borderBottomEndRadius: 35,
             borderBottomStartRadius: 35, 
           }
-
         }
       }
     >
-      <TopBar.Screen name="Seu Perfil" component={Login}
-        options={{ tabBarLabel: () => (<Cursor iconName={'ajudar'} labelName={'Ajudar'} />) }}
+      <TopBar.Screen name="Seu Perfil" component={Home}
+        options={{ 
+          tabBarLabel: () => (<Cursor iconName={'ajudar'} labelName={'Ajudar'} />) }}
       />
       <TopBar.Screen name="Minha rede de ajuda" component={Home}
         options={{

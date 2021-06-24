@@ -3,7 +3,6 @@ import { registerRootComponent } from 'expo'
 import { NavigationContainer } from '@react-navigation/native'
 import { Rotas } from './src/Routes/Routes';
 import { SafeAreaView, StyleSheet, StatusBar } from 'react-native'
-import Login from './src/Pages/Login'
 function Index() {
     return (
         <SafeAreaView style = {styles.container}>

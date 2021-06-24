@@ -7,6 +7,8 @@ import TopBarNav from "./TopBarNav";
 import Configuracoes from "../Pages/Configuracao"
 // import de metodos
 import NomeDaRota from './Functions/NomeRota';
+import { Login } from '../Pages/Login';
+import { Cadastro } from '../Pages/Cadastro';
 
 const NavBar = createMaterialTopTabNavigator();
 const Stack = createStackNavigator();
@@ -20,10 +22,11 @@ export function Rotas() {
                     { backgroundColor: '#FFE600', height: 82, elevation: 0 },
                 headerTitleStyle:
                     { fontSize: 22, fontWeight: 'bold' }
-
             }}>
+            <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="Cadastrar-se" component={Cadastro}/>
             <Stack.Screen
-                name="Minha Rede de ajuda"
+                name="TopBarNav"
                 component={TopBarNav}
                 options={({ route }) => ({ headerTitle: NomeDaRota(route) })} />
 
