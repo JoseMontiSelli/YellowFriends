@@ -11,38 +11,42 @@ export function Cadastro() {
 
   const cadastro = () => {
 
-    //alertar qual é a sua senha
-    //alert(senha)
-    //perguntar se o zé gostaria de colocar icones menores nos form
-
   }
   return (
+    // Inicio do código
     <View style={styles.container}>
       <StatusBar hidden />
+      {/* Cabeçario */}
       <View style={styles.cabecario}>
+        {/* Titulo cabeçario */}
         <Text style={styles.titulo}>
           Cadastre-se
         </Text>
+        {/* Subtitulo cabeçario */}
         <Text style={styles.subtitulo}>
           Só se voce quiser
         </Text>
       </View>
-
-      <View style={styles.}>
+      {/* View das input */}
+      <View style={styles.ViewInput}>
+        {/* Input seu nome */}
         <TextInput placeholder="Seu nome" style={styles.TextInput} onChangeText={text => setNome(text)} />
+        {/* Input sobrenome */}
         <TextInput placeholder="Sobrenome" style={styles.TextInput} onChangeText={text => setNome(text)} />
+        {/* Input e-mail */}
         <TextInput placeholder="E-mail" style={styles.TextInput} onChangeText={text => setEmail(text)} />
+        {/* Inputs das senhas */}
         <TextInput secureTextEntry={true} placeholder="Senha" style={styles.TextInput} onChangeText={text => setSenha(text)} />
         <TextInput secureTextEntry={true} placeholder="Digite novamente sua senha" style={styles.TextInput} onChangeText={text => setSenha(text)} />
       </View>
 
-
-      <TouchableOpacity style={styles.btnCadastro} onPress={() => cadastro()}>
-        <Text style={styles.textCadastro}>
-          Cadastrar-se]
-        </Text>
-      </TouchableOpacity>
-
+      <View style={styles.ViewBotao}>
+        <TouchableOpacity style={styles.btnCadastro} onPress={() => cadastro()}>
+         <Text style={styles.textCadastro}>
+           Cadastrar-se
+         </Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -84,9 +88,9 @@ const styles = StyleSheet.create({
     top: -30,
     backgroundColor: '#FFE600',
     borderRadius: 8,
-    justifyContent: 'flex-start',
-  },
+    justifyContent: 'flex-start'
 
+  },
   textCadastro: {
     color: 'white',
     textAlign: 'center',
@@ -98,7 +102,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 40,
     fontWeight: "bold",
-    fontFamily: 'SourceSansPro-Black'
 
   },
 
@@ -106,6 +109,14 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: "bold"
   },
+
+  ViewInput: {
+
+  },
+
+  ViewBotao:{
+    
+  }
 
 });
 
