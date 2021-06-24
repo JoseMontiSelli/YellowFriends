@@ -1,6 +1,6 @@
 
 import React from 'react';
-<<<<<<< HEAD
+
 import {
   StyleSheet,
   Text,
@@ -76,7 +76,7 @@ export default function Login() {
           source={require('./src/img/Vector-body.png')}
           style={styles.vector_corpo}
         />
-=======
+
           </View>
           
           {/* Icon perfil */} 
@@ -90,7 +90,7 @@ export default function Login() {
           <TouchableOpacity >
               <Text style = {styles.login} onPress={()=>GoogleSignIn.initAsync()} >Login</Text>
           </TouchableOpacity>
->>>>>>> conexaologin
+
 
       </View>
 
@@ -229,11 +229,11 @@ const styles = StyleSheet.create({
     top: '90%',
     bottom: '54.42%'
   },
-<<<<<<< HEAD
+
 });
-=======
+
  
   
-});  
 
->>>>>>> conexaologin
+
+
