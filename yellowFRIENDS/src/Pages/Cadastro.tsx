@@ -4,103 +4,107 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-nativ
 
 export function Cadastro() {
 
-  
-  const [nome,setNome] = useState('');
-  const [email,setEmail] = useState('');
-  const [senha,setSenha ] = useState('');
 
-  const cadastro = () =>{
-    
-  //alertar qual é a sua senha
-  //alert(senha)
-  //perguntar se o zé gostaria de colocar icones menores nos form
- 
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+
+  const cadastro = () => {
+
+    //alertar qual é a sua senha
+    //alert(senha)
+    //perguntar se o zé gostaria de colocar icones menores nos form
+
   }
   return (
     <View style={styles.container}>
       <StatusBar hidden />
-      <View style={styles.cabeçario}>
+      <View style={styles.cabecario}>
         <Text style={styles.titulo}>
-           Cadastre-se 
-            </Text>
+          Cadastre-se
+        </Text>
         <Text style={styles.subtitulo}>
-           Só se voce quiser
-            </Text>
+          Só se voce quiser
+        </Text>
       </View>
-      <TextInput placeholder="Seu nome" style={styles.TextInput} onChangeText={text=>setNome(text)} />
-      <TextInput placeholder="Sobrenome" style={styles.TextInput} onChangeText={text=>setNome(text)} />
-      <TextInput placeholder="E-mail" style={styles.TextInput} onChangeText={text=>setEmail(text)} />
-      <TextInput secureTextEntry={true} placeholder="Senha" style={styles.TextInput} onChangeText={text=>setSenha(text)} />
-      <TextInput secureTextEntry={true} placeholder="Digite novamente sua senha" style={styles.TextInput} onChangeText={text=>setSenha(text)} />
-      
 
-      <TouchableOpacity style={styles.btnCadastro} onPress={()=>cadastro()}>
+      <View style={styles.}>
+        <TextInput placeholder="Seu nome" style={styles.TextInput} onChangeText={text => setNome(text)} />
+        <TextInput placeholder="Sobrenome" style={styles.TextInput} onChangeText={text => setNome(text)} />
+        <TextInput placeholder="E-mail" style={styles.TextInput} onChangeText={text => setEmail(text)} />
+        <TextInput secureTextEntry={true} placeholder="Senha" style={styles.TextInput} onChangeText={text => setSenha(text)} />
+        <TextInput secureTextEntry={true} placeholder="Digite novamente sua senha" style={styles.TextInput} onChangeText={text => setSenha(text)} />
+      </View>
+
+
+      <TouchableOpacity style={styles.btnCadastro} onPress={() => cadastro()}>
         <Text style={styles.textCadastro}>
-           Cadastrar-se]
-           </Text>
+          Cadastrar-se]
+        </Text>
       </TouchableOpacity>
-    
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
+    flex: 1,
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    padding:30
-   
-  },
-  TextInput:{
-   width:'100%',
-   height:49,
-   top:40,
-   backgroundColor: '#F6F6F6',
-   borderRadius:10,
-   paddingLeft:20,
-   marginBottom:30,
-    
-  },
-  btnCadastro:{
-   position:'absolute',
-   width: '60%',
-   height: 51,
-   left: 99,
-   top: 650,
-   backgroundColor:'#FFD600',
-   borderRadius:30,
-   justifyContent:'center',
+    paddingTop: 30
 
   },
-  cabeçario:{
-   width: 455,
-   height: 132,
-   top:-30,
-   backgroundColor: '#FFE600',
-   borderRadius:8,
-   justifyContent:'flex-start',
+  TextInput: {
+    width: '100%',
+    height: 49,
+    top: 40,
+    backgroundColor: '#F6F6F6',
+    borderRadius: 10,
+    paddingLeft: 20,
+    marginBottom: 30,
 
   },
-  textCadastro:{
-   color:'white',
-   textAlign:'center',
-   fontSize:24,
-   fontWeight: "bold",
+  btnCadastro: {
+    position: 'absolute',
+    width: '60%',
+    height: 51,
+    left: 99,
+    top: 650,
+    backgroundColor: '#FFD600',
+    borderRadius: 30,
+    justifyContent: 'center',
 
   },
-  titulo:{
-   color:'white',
-   fontSize:40,
-   fontWeight: "bold",
-   fontFamily:'SourceSansPro-Black'
+  cabecario: {
+    width: '100%',
+    height: 132,
+    paddingHorizontal: 30,
+    top: -30,
+    backgroundColor: '#FFE600',
+    borderRadius: 8,
+    justifyContent: 'flex-start',
+  },
+
+  textCadastro: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 24,
+    fontWeight: "bold",
 
   },
-  subtitulo:{
-   color:'white',
-   fontWeight: "bold"
-  
+  titulo: {
+    color: 'white',
+    fontSize: 40,
+    fontWeight: "bold",
+    fontFamily: 'SourceSansPro-Black'
+
+  },
+
+  subtitulo: {
+    color: 'white',
+    fontWeight: "bold"
   },
 
 });
