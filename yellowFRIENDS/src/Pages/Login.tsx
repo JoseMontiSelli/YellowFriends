@@ -1,24 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  TextInput,
-  Image,
-  ScrollView
-} from 'react-native';
-
-
-
-
-export default function Login() {
-  
-  
-       
-=======
 import { StyleSheet } from 'react-native';
 import { Text } from 'react-native';
 import { View } from 'react-native';
@@ -26,7 +6,6 @@ import { TextInput } from 'react-native';
 import { Image } from 'react-native';
 import { BotaoLogin } from './Components/BotaoLogin';
 import { BotaoCadastrar } from './Components/BotaoCadastrar';
->>>>>>> 906490900c3c3d44e3425ebf9fd9679958e1a2c6
 
 export function Login() {
 
@@ -46,35 +25,6 @@ export function Login() {
           {/* Caixa de texto */}
           <TextInput placeholder='Digite seu E-mail aqui' style={styles.input_Login} />
         </View>
-<<<<<<< HEAD
-
-        {/* Icon perfil */}
-        <Image
-          source={require('./src/img/Vector-head.png')}
-          style={styles.vector_cabeça}
-        />
-        <Image
-          source={require('./src/img/Vector-body.png')}
-          style={styles.vector_corpo}
-        />
-
-          </View>
-          
-          {/* Icon perfil */} 
-          
-            
-        </View>
-
-        {/* Buttons */} 
-        <View style = {styles.btn_Login}>
-          
-          <TouchableOpacity >
-              <Text style = {styles.login} onPress={()=>GoogleSignIn.initAsync()} >Login</Text>
-          </TouchableOpacity>
-
-
-=======
->>>>>>> 906490900c3c3d44e3425ebf9fd9679958e1a2c6
       </View>
 
       {/* Buttons */}
