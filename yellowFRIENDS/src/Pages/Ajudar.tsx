@@ -5,6 +5,7 @@ import { Dimensions, StyleSheet, Text, View, Image, ScrollView, } from 'react-na
 import { ProfileImage } from './Components/ProfileImage'
 import { ProfileName } from './Components/ProfileName'
 import { ProfilePersonalInfos } from './Components/ProfilePersonalInfos'
+import { ProfileBio } from './Components/ProfileBio'
 
 
 export function Ajudar() {
@@ -13,18 +14,16 @@ export function Ajudar() {
     <ScrollView>
       <View style={styles.container}>
 
-        {/* Topo da tela com informações pessoais */}
+        {/* Topo da tela com informações pessoais do usuario */}
         <View style={styles.section_dadosusuarios}>
           {/* Imagem do usuario */}
           <ProfileImage />
-          {/* Nome do usuario*/}
-          <ProfileName />
-          {/* Infos pessoais do usuário */}
+          {/* Nome do usuario*/} 
+          <ProfileName /> 
+           {/* Infos pessoais do usuário */}
           <ProfilePersonalInfos />
           {/* Biografia */}
-          <View style={styles.bio}>
-            <Text style={styles.textBio}>Eu sou só um cara legal tentando ajudar as pessoas e gosto de trens</Text>
-          </View>
+          <ProfileBio/> 
         </View>
 
         {/* Selos */}
@@ -71,16 +70,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-
-  // BIOGRAFIA
-  bio: {
-    justifyContent: 'center',
-    marginTop: 30,
-    paddingHorizontal: 30,
-  },
-  textBio: {
-    fontSize: 18,
   },
 
   //SELOS
