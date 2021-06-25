@@ -128,15 +128,5 @@ const styles = StyleSheet.create({
     top: '90%',
     bottom: '54.42%'
   },
-<<<<<<< HEAD
 
 });
-
- 
-  
-
-
-
-=======
-})
->>>>>>> 906490900c3c3d44e3425ebf9fd9679958e1a2c6

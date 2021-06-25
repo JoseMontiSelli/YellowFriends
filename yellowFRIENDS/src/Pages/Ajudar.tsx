@@ -16,35 +16,35 @@ export function Ajudar() {
               style={styles.imagemUsuario}
               source={require('../images/Usuarios/Antonio.jpg')} />
           </View>
+
+          {/* Nome do usuario*/}
+          <View style={styles.containerNomeSobrenome}>
+            <Text style={styles.nomeSobrenome} >
+              Antonio
+            </Text>
+            <Text style={styles.nomeSobrenome}>
+              Silva
+            </Text>
+          </View>
+
           {/* Infos pessoais do usuário */}
-          <View style={styles.section_personalinfo}>
-
-            {/* Nome do usuario*/}
-            <View style={styles.containerNomeSobrenome}>
-              <Text style={styles.nomeSobrenome} >
-                Antonio
-              </Text>
-              <Text>
-                Silva
-              </Text>
-            </View>
-
+          <View style={styles.containerPersonalInfos}>
             {/* Infos extras */}
             <View style={styles.containerPersonalInfos}>
               {/* Parte da esquerda */}
-              <View>
+              <View style={styles.infos}>
                 <View style={styles.nick}>
-                  <Text>tonhao </Text>
+                  <Text>@Tonhao</Text>
                 </View>
 
                 <View style={styles.localization}>
-                  <Text> </Text>
+                  <Text>São paulo</Text>
                 </View>
               </View>
 
               {/* Parte da direita */}
 
-              <View>
+              <View style={styles.infos}>
                 <View style={styles.tempoNoApp}>
                   <Text>Tempo no app </Text>
                 </View>
@@ -58,12 +58,13 @@ export function Ajudar() {
 
           </View>
 
-          <View style={styles.section_bio}>
-            <Text style={styles.lbl_bio}>Eu sou só um cara legal tentando ajudar e gosto de trens</Text>
+          {/* Biografia */}
+          <View style={styles.bio}>
+            <Text style={styles.textBio}>Eu sou só um cara legal tentando ajudar e gosto de trens</Text>
           </View>
         </View>
 
-        <View style={styles.selos_background}>
+        <View style={styles.containerSelos}>
 
           <Image
             source={require('../images/Selos/selo_BemHumorado.png')}
@@ -92,15 +93,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-// SESSÃO DE DADOS DO USUARIO
+
+  // SESSÃO DE DADOS DO USUARIO
   section_dadosusuarios: {
     flex: 1,
-    marginTop: 40,
+    marginTop: 0,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
   },
-// IMAGEM DO USUARIO
+  
+  // IMAGEM DO USUARIO
   containerImagemUsuario: {
     flex: 1,
     width: 250,
@@ -108,70 +111,70 @@ const styles = StyleSheet.create({
     borderRadius: 1000,
     overflow: 'hidden'
   },
-
   imagemUsuario: {
     width: '100%'
   },
 
-// NOME DO USUARIO
+  //NOME DO USUARIO
+  containerNomeSobrenome: {
+    width: '100%',
+    flexDirection: 'row'
+  },
   nomeSobrenome: {
     fontSize: 30,
-    top: 30,
+    marginHorizontal: 10
   },
-  
-  section_personalinfo: {
-    flex: 1,
-    top: 35,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
 
-  },
-  section_nicklocalization: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: 15
-  },
-  vector_transpa: {
-    width: 10,
-  },
-  section_tempoapp: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: 15
-  },
-  lbl_caption: {
-    fontSize: 15
-  },
-  section_bio: {
-    flex: 1,
-    top: 60,
-    justifyContent: 'center'
-
-  },
-  lbl_bio: {
-    fontSize: 18,
-    textAlign: 'center'
-
-  },
-  selos_background: {
-    flex: 1,
-    backgroundColor: '#FFE600',
+  // INFORMAÇÕES PESSOAIS DO USUARIO
+  containerPersonalInfos: {
     width: '100%',
-    height: 1200,
-    flexDirection: 'column',
-    borderRadius: 5,
+    flexDirection: 'row',
+    justifyContent: 'center'
+  },
+  infos: {
+    flexDirection:'column',
+    marginHorizontal:10
+  },
+
+  // PARTE DA ESQUERDA
+  nick: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    fontSize: 15
+  },
+  localization: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 15
+  },
+
+  // PARTE DA DIREITA
+  tempoNoApp: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 15
+  },
+  time: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 15
+  },
+
+  // BIOGRAFIA
+  bio: {
 
   },
-  title_Selos: {
-    width: 113,
-    height: 36,
-    top: -400,
-    right: 100
+  textBio: {
+
+  },
+
+  //SELOS
+  containerSelos: {
+
   },
 
   selo: {
