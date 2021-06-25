@@ -2,17 +2,17 @@ const DATA = [
     {
       id: '1',
       title: 'Selo bem humorado',
-      img: require('../img/seloBemHumor.png')
+      img: require('../images/Selos/Miniaturas/seloHumorado.png')
     },
     {
       id: '2',
       title: 'Selo bom conselheiro',
-      img: require('../img/seloVerme.png')
+      img: require('../images/Selos/Miniaturas/seloConselheiro.png')
     },
     {
       id: '3',
-      title: 'Selo',
-      img: require('../img/seloOuvinte.png')
+      title: 'Selo bom ouvinte',
+      img: require('../images/Selos/Miniaturas/seloOuvinte.png')
     },
   ];
 
