@@ -19,7 +19,7 @@ const App = () => {
       <Text style={styles.reconhec}> RECONHECIMENTO </Text>
       <TouchableOpacity  activeOpacity={0.5}>
     <Image
-     source={require('./img/icon_down.png')}
+     source={require('../images/icons/IconDown.png')}
      style={styles.iconDown}
     />
     </TouchableOpacity>
@@ -28,7 +28,7 @@ const App = () => {
       </View>
       <View style={styles.perf}>
       <Image
-        source={require('./img/bia.png')}
+        source={require('../images/Usuarios/bia.png')}
         style={styles.imgBia}>
       </Image>
          <Text style={styles.perfil}> Bea Tricoli</Text>
@@ -38,7 +38,7 @@ const App = () => {
       <Text style={styles.pesOn}> Pessoas online</Text>
     </View>
     <View style={styles.perfTonio}>
-      <Image source={require('./img/Coculuos.png')}
+      <Image source={require('../images/Usuarios/Antonio.jpg')}
       style={styles.imgTonhao}>
       </Image>
       <Text style={styles.txtTonho}> Antonio Roberto</Text>
@@ -56,7 +56,7 @@ const App = () => {
       </View></View>
    
     <View style={styles.perfDani}>
-      <Image source={require('./img/Moculos.png')}
+      <Image source={require('../images/Usuarios/Macicleide.jpg')}
       style={styles.imgTonhao}>
       </Image>
         <Text style={styles.txtDani}>Daniele Pereira</Text>
@@ -78,7 +78,7 @@ const App = () => {
       <Text style={styles.pesOn}> Grupos de ajuda</Text>
     </View>
     <View style={styles.gpajuda}>
-    <Image source={require('./img/icon_Grupo.png')}
+    <Image source={require('../image/Icons/IconGrupo.png')}
       style={styles.icongp}></Image>
       <Text style={styles.numPessoas}>3/8</Text>
       <Text style={styles.PesGP}>pessoas no grupo</Text>

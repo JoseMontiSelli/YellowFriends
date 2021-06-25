@@ -5,7 +5,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 // Import de telas
 import { Home } from '../Pages/Home'
 import { Ajudar } from '../Pages/Ajudar'
-// import BuscarAjuda from '../Pages/BuscarAjuda'
+import BuscarAjuda from '../Pages/BuscarAjuda'
 // Import de templates
 import { Cursor } from './Templates/Cursor'
 
@@ -56,7 +56,7 @@ export default function TopBarNav() {
           tabBarLabel: () => (<Cursor iconName={'home'} labelName={'Home'} />),
         }}
       />
-      <TopBar.Screen name="Buscar ajuda" component={Home}
+      <TopBar.Screen name="Buscar ajuda" component={BuscarAjuda}
         options={{
           tabBarLabel: () => (<Cursor labelName={'Buscar Ajuda'} iconName={'buscar ajuda'}/> )
         }}
