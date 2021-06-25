@@ -4,7 +4,7 @@ import { Dimensions, View, Text } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 // Import de telas
 import { Home } from '../Pages/Home'
-// import { Ajudar } from '../Pages/Ajudar'
+import { Ajudar } from '../Pages/Ajudar'
 // import BuscarAjuda from '../Pages/BuscarAjuda'
 // Import de templates
 import { Cursor } from './Templates/Cursor'
@@ -47,7 +47,7 @@ export default function TopBarNav() {
         }
       }
     >
-      <TopBar.Screen name="Seu Perfil" component={Home}
+      <TopBar.Screen name="Seu Perfil" component={Ajudar}
         options={{ 
           tabBarLabel: () => (<Cursor iconName={'ajudar'} labelName={'Ajudar'} />) }}
       />

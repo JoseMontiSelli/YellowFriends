@@ -8,18 +8,52 @@ export function Ajudar() {
     <ScrollView>
       <View style={styles.container}>
 
-        <View style={styles.header_background}>
-          <Text>Meu pau</Text>
-        </View>
-
+        {/* Topo da tela com informações pessoais */}
         <View style={styles.section_dadosusuarios}>
-
+          {/* Imagem do usuario */}
+          <View style={styles.containerImagemUsuario}>
+            <Image
+              style={styles.imagemUsuario}
+              source={require('../images/Usuarios/Antonio.jpg')} />
+          </View>
+          {/* Infos pessoais do usuário */}
           <View style={styles.section_personalinfo}>
 
-            <View style={styles.section_nicklocalization}>
+            {/* Nome do usuario*/}
+            <View style={styles.containerNomeSobrenome}>
+              <Text style={styles.nomeSobrenome} >
+                Antonio
+              </Text>
+              <Text>
+                Silva
+              </Text>
             </View>
 
-            <View style={styles.section_tempoapp}>
+            {/* Infos extras */}
+            <View style={styles.containerPersonalInfos}>
+              {/* Parte da esquerda */}
+              <View>
+                <View style={styles.nick}>
+                  <Text>tonhao </Text>
+                </View>
+
+                <View style={styles.localization}>
+                  <Text> </Text>
+                </View>
+              </View>
+
+              {/* Parte da direita */}
+
+              <View>
+                <View style={styles.tempoNoApp}>
+                  <Text>Tempo no app </Text>
+                </View>
+
+                <View style={styles.time}>
+                  <Text> 20 h </Text>
+                </View>
+              </View>
+
             </View>
 
           </View>
@@ -32,16 +66,16 @@ export function Ajudar() {
         <View style={styles.selos_background}>
 
           <Image
-            source={require('./src/images/Selos/selo_BemHumorado.png')}
-            style={styles.selo_bemhumorado}/>
+            source={require('../images/Selos/selo_BemHumorado.png')}
+            style={styles.selo} />
 
           <Image
-            source={require('./src/images/Selos/selo_BomConselheiro.png')}
-            style={styles.selo_bomconselheiro}/>
+            source={require('../images/Selos/selo_BomConselheiro.png')}
+            style={styles.selo} />
 
           <Image
-            source={require('./src/images/Selo/selo_BomOuvinte.png')}
-            style={styles.selo_bomouvinte}/>
+            source={require('../images/Selos/selo_BomOuvinte.png')}
+            style={styles.selo} />
 
         </View>
 
@@ -54,42 +88,37 @@ export function Ajudar() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-
   },
-  header_background: {
-    flex: 1,
-    backgroundColor: '#FFE600',
-    width: '100%',
-    height: 98,
-    paddingTop: 44,
-    paddingLeft: '5.6%',
-    flexDirection: 'row',
-    borderRadius: 5,
-
-  },
-
-
+// SESSÃO DE DADOS DO USUARIO
   section_dadosusuarios: {
     flex: 1,
+    marginTop: 40,
     flexDirection: 'column',
-    top: 250,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  imagem_usuario: {
-    backgroundColor: 'gray',
-    width: 200,
-    height: 200,
-    borderRadius: 100
+// IMAGEM DO USUARIO
+  containerImagemUsuario: {
+    flex: 1,
+    width: 250,
+    height: 250,
+    borderRadius: 1000,
+    overflow: 'hidden'
   },
-  lbl_nome: {
+
+  imagemUsuario: {
+    width: '100%'
+  },
+
+// NOME DO USUARIO
+  nomeSobrenome: {
     fontSize: 30,
     top: 30,
   },
+  
   section_personalinfo: {
     flex: 1,
     top: 35,
@@ -132,7 +161,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFE600',
     width: '100%',
     height: 1200,
-    top: 525,
     flexDirection: 'column',
     borderRadius: 5,
     alignItems: 'center',
@@ -144,24 +172,10 @@ const styles = StyleSheet.create({
     height: 36,
     top: -400,
     right: 100
+  },
 
+  selo: {
 
-  },
-  selo_bemhumorado: {
-    width: 313,
-    height: 130,
-    top: -360
-
-  },
-  selo_bomconselheiro: {
-    width: 313,
-    height: 130,
-    top: -300
-  },
-  selo_bomouvinte: {
-    width: 313,
-    height: 130,
-    top: -240
-  },
+  }
 
 });
