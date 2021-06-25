@@ -31,7 +31,7 @@ const App = () => {
         source={require('../images/Usuarios/bia.png')}
         style={styles.imgBia}>
       </Image>
-         <Text style={styles.perfil}> Bea Tricoli</Text>
+         <Text style={styles.perfil}>Bea Tricoli</Text>
          <View style={styles.vwBi}><Text style={styles.txtBi}>loren ipsun num sei das...</Text></View>
          </View>
     <View style={styles.On}>
