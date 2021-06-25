@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState, } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 
 export function Cadastro() {
 
@@ -27,6 +27,7 @@ export function Cadastro() {
           Mas só se voce quiser :)
         </Text>
       </View>
+      <ScrollView style={styles.scrollView}>
       {/* View das input */}
       <View style={styles.ViewInput}>
         {/* Input seu nome */}
@@ -47,6 +48,7 @@ export function Cadastro() {
          </Text>
         </TouchableOpacity>
       </View>
+      </ScrollView>
     </View>
   );
 }
@@ -59,13 +61,19 @@ const styles = StyleSheet.create({
     paddingTop: 30
 
   },
+  scrollView: {
+    backgroundColor: 'white',
+    marginHorizontal: 0,
+    width:'100%'
+  },
   TextInput: {
-    width: '100%',
+    width: '90%',
     height: 49,
     backgroundColor: '#F6F6F6',
     borderRadius: 10,
-    paddingLeft: 20,
+    marginLeft:40,
     marginBottom: 30,
+    paddingLeft:20
 
   },
   btnCadastro: {
@@ -74,8 +82,12 @@ const styles = StyleSheet.create({
     padding:15,
     marginTop:50,
     paddingRight:38,
-    paddingLeft:38
+    paddingLeft:38,
+    maxWidth:'50%',
+    marginLeft:'25%'
+  
   },
+
   cabecario: {
     width: '100%',
     height: 132,
