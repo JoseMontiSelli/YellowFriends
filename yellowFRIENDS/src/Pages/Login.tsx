@@ -13,24 +13,33 @@ export function Login() {
     <View style={styles.container}>
       {/* Metade do background amarelo */}
       <View style={styles.viewbackground}>
-        {/* LBL QuemSomos */}
-        <Text style={styles.lbl_quemsomos}> Quem somos nós </Text>
+        
         {/* Logo YellowFRIENDS */}
         <View style={styles.icon_logo}>
+          {/* LBL QuemSomos */}
+          <Text style={styles.lbl_quemsomos}> Quem somos nós </Text>
           <Image source={require('../images/Logo.png')} />
           {/* Letreiro */}
-          <Text>yellowFRIENDS</Text>
+          <Text style={styles.letreiro} >yellowFRIENDS</Text>
           {/* Slogan */}
-          <Text>A tecnologia construida em comunidade</Text>
+          <Text style={styles.slogan} >A tecnologia construida em comunidade</Text>
           {/* Caixa de texto */}
           <TextInput placeholder='Digite seu E-mail aqui' style={styles.input_Login} />
+          {/* Caixa de texto */}
+          <TextInput placeholder='Senha' style={styles.input_Senha} />
         </View>
       </View>
+
+      
 
       {/* Buttons */}
         <BotaoLogin tela='TopBarNav'/>
         <BotaoCadastrar tela='Cadastrar-se'/>
+
+      {/* LBL IrSemCadastro */}
+      <Text style={styles.lbl_semcadastro}>Ir sem cadastro</Text>
     </View>
+    
   )
 }
 
@@ -42,6 +51,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
+    
+    
   },
   /* Metade do background amarelo */
   viewbackground: {
@@ -51,19 +62,22 @@ const styles = StyleSheet.create({
     height: 478,
     alignItems: 'center',
     justifyContent: 'center',
+    
   },
   /* LBL QuemSomos */
   lbl_quemsomos: {
-    position: 'absolute',
+    paddingRight: '15%',
     width: 500,
     height: 25,
-    left: '60%',
-    top: '15%',
+    textAlign: 'right',
+    top: '-5%',
+    
     fontWeight: 'bold'
   },
   /* Logo YellowFRIENDS */
   icon_logo: {
     flex: 1,
+    top: '18%',
     alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
@@ -72,22 +86,38 @@ const styles = StyleSheet.create({
   letreiro: {
     position: 'absolute',
     width: 315,
-    height: 35,
-    top: 170
+    color: 'white',
+    fontWeight: 'bold',
+    top: '90%',
+    fontSize: 25,
+    textAlign:'center',
   },
   /* Slogan */
   slogan: {
     position: 'absolute',
-    top: '120%',
+    top: '110%',
     width: 318,
-    height: 15,
+    fontSize: 12,
+    color: 'white',
+    textAlign:'center',
   },
   /* Caixa de texto Login */
   input_Login: {
     position: 'absolute',
     width: 286.7,
     height: 53.29,
-    top: '145%',
+    top: '130%',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 9,
+    justifyContent: 'center',
+    textAlign: 'center'
+  },
+  /* Caixa de texto Senha */
+  input_Senha: {
+    position: 'absolute',
+    width: 286.7,
+    height: 53.29,
+    top: '165%',
     backgroundColor: '#FFFFFF',
     borderRadius: 9,
     justifyContent: 'center',
@@ -111,10 +141,12 @@ const styles = StyleSheet.create({
 
   lbl_semcadastro: {
     position: 'absolute',
-    left: '23%',
-    top: '240%',
+    
+    top: '82%',
     fontSize: 18,
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
+    textAlign:'center',
+    fontWeight: 'bold',
   },
   vector_cabeça: {
     position: 'absolute',
@@ -130,3 +162,9 @@ const styles = StyleSheet.create({
   },
 
 });
+
+ 
+  
+
+
+
