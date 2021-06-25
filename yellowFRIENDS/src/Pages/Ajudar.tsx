@@ -214,7 +214,7 @@ const styles = StyleSheet.create({
     width: 120,
     height:45,
     top:-20,
-    left:50,
+    left:30,
     borderWidth:3,
     borderRadius:5,
 
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffe600'
   },
   selo: {
-    width: 350,
+    width: Dimensions.get('window').width * 0.9,
     height: 150,
     overflow: 'visible',
     marginTop: 30
