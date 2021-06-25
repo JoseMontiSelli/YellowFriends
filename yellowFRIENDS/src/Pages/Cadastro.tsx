@@ -24,23 +24,23 @@ export function Cadastro() {
         </Text>
         {/* Subtitulo cabeçario */}
         <Text style={styles.subtitulo}>
-          Só se voce quiser
+          Mas só se voce quiser :)
         </Text>
       </View>
       {/* View das input */}
       <View style={styles.ViewInput}>
         {/* Input seu nome */}
-        <TextInput placeholder="Seu nome" style={styles.TextInput} onChangeText={text => setNome(text)} />
+        <TextInput placeholder="Nome" style={styles.TextInput} onChangeText={text => setNome(text)} />
         {/* Input sobrenome */}
         <TextInput placeholder="Sobrenome" style={styles.TextInput} onChangeText={text => setNome(text)} />
         {/* Input e-mail */}
         <TextInput placeholder="E-mail" style={styles.TextInput} onChangeText={text => setEmail(text)} />
         {/* Inputs das senhas */}
         <TextInput secureTextEntry={true} placeholder="Senha" style={styles.TextInput} onChangeText={text => setSenha(text)} />
-        <TextInput secureTextEntry={true} placeholder="Digite novamente sua senha" style={styles.TextInput} onChangeText={text => setSenha(text)} />
+        <TextInput secureTextEntry={true} placeholder="Repita a sua senha" style={styles.TextInput} onChangeText={text => setSenha(text)} />
       </View>
 
-      <View style={styles.ViewBotao}>
+      <View>
         <TouchableOpacity style={styles.btnCadastro} onPress={() => cadastro()}>
          <Text style={styles.textCadastro}>
            Cadastrar-se
@@ -56,14 +56,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
-    justifyContent: 'flex-start',
     paddingTop: 30
 
   },
   TextInput: {
     width: '100%',
     height: 49,
-    top: 40,
     backgroundColor: '#F6F6F6',
     borderRadius: 10,
     paddingLeft: 20,
@@ -71,29 +69,23 @@ const styles = StyleSheet.create({
 
   },
   btnCadastro: {
-    position: 'absolute',
-    width: '60%',
-    height: 51,
-    left: 99,
-    top: 650,
     backgroundColor: '#FFD600',
     borderRadius: 30,
-    justifyContent: 'center',
-
+    padding:15,
+    marginTop:50,
+    paddingRight:38,
+    paddingLeft:38
   },
   cabecario: {
     width: '100%',
     height: 132,
+    top:'-5%',
     paddingHorizontal: 30,
-    top: -30,
     backgroundColor: '#FFE600',
     borderRadius: 8,
-    justifyContent: 'flex-start'
-
   },
   textCadastro: {
     color: 'white',
-    textAlign: 'center',
     fontSize: 24,
     fontWeight: "bold",
 
@@ -102,7 +94,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 40,
     fontWeight: "bold",
-
+    marginTop:20
   },
 
   subtitulo: {
@@ -111,12 +103,8 @@ const styles = StyleSheet.create({
   },
 
   ViewInput: {
-
-  },
-
-  ViewBotao:{
-    
+    width:'90%',
+    top:'5%'
   }
-
 });
 
