@@ -17,19 +17,19 @@ export default function TopBarNav() {
     <TopBar.Navigator initialRouteName="Minha rede de ajuda"
       tabBarOptions={
         {
-          labelStyle: { 
+          labelStyle: {
             fontSize: 30,
           },
-          style:{ 
+          style: {
             elevation: 3,
             height: 70,
           },
           tabStyle: {
-            width: TabSize/3,
+            width: TabSize / 3,
             height: 70,
           },
 
-          indicatorStyle:{
+          indicatorStyle: {
             boxSizing: 'border-box',
             display: 'flex',
             flexDirection: 'row',
@@ -37,19 +37,20 @@ export default function TopBarNav() {
             backgroundColor: '#FFE600',
             top: 0,
 
-            width: TabSize/8,
-            marginLeft: TabSize/9.5,
+            width: TabSize / 8,
+            marginLeft: TabSize / 9.5,
 
-            height: 48,  
+            height: 48,
             borderBottomEndRadius: 35,
-            borderBottomStartRadius: 35, 
+            borderBottomStartRadius: 35,
           }
         }
       }
     >
       <TopBar.Screen name="Seu Perfil" component={Ajudar}
-        options={{ 
-          tabBarLabel: () => (<Cursor iconName={'ajudar'} labelName={'Ajudar'} />) }}
+        options={{
+          tabBarLabel: () => (<Cursor iconName={'ajudar'} labelName={'Ajudar'} />)
+        }}
       />
       <TopBar.Screen name="Minha rede de ajuda" component={Home}
         options={{
@@ -58,7 +59,7 @@ export default function TopBarNav() {
       />
       <TopBar.Screen name="Buscar ajuda" component={Home}
         options={{
-          tabBarLabel: () => (<Cursor labelName={'Buscar Ajuda'} iconName={'buscar ajuda'}/> )
+          tabBarLabel: () => (<Cursor labelName={'Buscar Ajuda'} iconName={'buscar ajuda'} />)
         }}
       />
     </TopBar.Navigator>

@@ -22,7 +22,7 @@ export function Ajudar() {
           <ProfileName /> 
            {/* Infos pessoais do usuário */}
           <ProfilePersonalInfos />
-          {/* Biografia */}
+          
           <ProfileBio/> 
         </View>
 
