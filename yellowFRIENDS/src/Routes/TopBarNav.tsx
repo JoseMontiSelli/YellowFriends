@@ -57,7 +57,7 @@ export default function TopBarNav() {
           tabBarLabel: () => (<Cursor iconName={'home'} labelName={'Home'} />),
         }}
       />
-      <TopBar.Screen name="Buscar ajuda" component={Home}
+      <TopBar.Screen name="Buscar ajuda" component={BuscarAjuda}
         options={{
           tabBarLabel: () => (<Cursor labelName={'Buscar Ajuda'} iconName={'buscar ajuda'} />)
         }}
